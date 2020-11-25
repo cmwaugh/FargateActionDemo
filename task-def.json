@@ -30,11 +30,11 @@
       "workingDirectory": null,
       "secrets": null,
       "dockerSecurityOptions": null,
-      "memory": null,
+      "memory": 512,
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "httpd:2.4",
+      "image": "191049501976.dkr.ecr.eu-west-1.amazonaws.com/my-ecr-repo",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -61,7 +61,6 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:eu-west-1:191049501976:task-definition/sample-fargate:2",
   "family": "sample-fargate",
   "requiresAttributes": [
     {
