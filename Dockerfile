@@ -1,5 +1,13 @@
 FROM ubuntu:18.04
 
+VOLUME /tmp
+ARG REGION_ARG=eu-west-1
+ARG ACCESS_ARG
+ARG SECRET_ARG
+ENV AWS_REGION=$REGION_ARG
+ENV AWS_ACCESS_KEY=$ACCESS_ARG
+ENV AWS_SECRET_KEY=$SECRET_ARG
+
 # Install dependencies
 RUN apt-get update && \
  apt-get -y install apache2
